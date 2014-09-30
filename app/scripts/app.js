@@ -15,7 +15,9 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'appServices'
+
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -27,6 +29,7 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
+
       .otherwise({
         redirectTo: '/'
       });
